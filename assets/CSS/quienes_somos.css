@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =======================================================
+   ESTILOS ESPECÍFICOS: SOBRE NOSOTROS (QUIENES SOMOS)
+   ======================================================= */
+
+/* --- 1. SECCIÓN SUPERIOR (Imagen y Texto) --- */
+.seccion-superior {
+    display: flex; 
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 2rem 0rem 2rem; /* Eliminado padding inferior */
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+
+.imagen-container-carrusel-box{
+    flex: 1;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.15);
+}
+.imagen-container-carrusel-box ul{
+    display: flex;
+    padding: 0;
+    width: 500%; 
+    height: 100%;
+    animation: carrusel 12s infinite linear;
+}
+
+.imagen-container-carrusel-box li {
+    width: 20%; 
+    list-style: none;
+    flex-shrink: 0; 
+    position: relative;
+}
+
+.imagen-container-carrusel-box li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 2rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0,0,0,0.1);
+}
+
+@keyframes carrusel {
+    /* IMAGEN 1 (Posición: 0%) - Pausa hasta el 19% */
+    0% { margin-left: 0; }
+    19.5% { margin-left: 0; }
+
+    /* IMAGEN 2 */
+    19.6% { margin-left: -100%; }
+    40% { margin-left: -100%; }
+
+    /* IMAGEN 3 */
+    40.1% { margin-left: -200%; }
+    60% { margin-left: -200%; }
+
+    /* IMAGEN 4  */
+    60.1% { margin-left: -300%; }
+    80.5% { margin-left: -300%; }
+
+    /* IMAGEN 5 */
+    80.6% { margin-left: -400%; }
+    100% { margin-left: -400%; }
+
+}
+
+.texto-container {
+    flex: 1; 
+    font-size: 1.1rem; 
+    text-align: justify;
+}
+
+.texto-container h1{
+    text-align: center;
+    font-family: var(--titulo);
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--color-4);
+}
+
+
+.imagen-ciclistas {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto-container p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 0; /* Eliminado margen inferior */
+    color: var(--color-1);
+}
+
+.texto-container p:first-of-type {
+    margin-bottom: 1rem; /* Solo espacio entre párrafos internos */
+}
+
+/* --- 2. SECCIÓN INFERIOR (Rueda y Texto) --- */
+
+.contenido-adicional {
+    display: flex;
+    gap: 2rem;
+    padding: 0rem 2rem 2rem 2rem; /* Eliminado padding superior */
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* RUEDA: Definición de tamaño y posición */
+.rueda-container {
+    flex-basis: 20.75rem;
+    flex-shrink: 0;
+    width: 20.75rem;
+    height: 20.75rem;
+}
+
+.rueda-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.texto-inferior {
+    line-height: 1.6;
+    flex-grow: 1;
+    text-align: justify;
+    font-size: 1.1rem; /* Ajustado para consistencia */
+}
+
+/* --- 3. CUADRÍCULA MISION/VISION/VALORES --- */
+.mision-vision-valores {
+    max-width: 68.75rem;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.cuadrícula-moderna {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0; /* Sin espacio para que parezca un solo bloque */
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 1.25rem 3.125rem rgba(0,0,0,0.1);
+}
+
+.bloque-info {
+    padding: 4rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.0625rem solid rgba(0,0,0,0.03);
+    transition: all 0.4s ease;
+}
+
+.bloque-info.mision { background-color: #ffffff; }
+.bloque-info.vision { background-color: #fcfcfc; }
+.bloque-info.valores-1 { background-color: #f9f9f9; }
+.bloque-info.valores-2 { background-color: #ffffff; }
+
+.bloque-info:hover {
+    background-color: var(--color-5);
+    z-index: 2;
+    transform: scale(1.02);
+}
+
+.bloque-info:hover h2, 
+.bloque-info:hover p, 
+.bloque-info:hover i {
+    color: white;
+}
+
+.bloque-info i {
+    font-size: 3rem;
+    color: var(--color-5);
+    margin-bottom: 1.5rem;
+}
+
+.bloque-info h2 {
+    font-family: var(--titulo);
+    font-size: 1.8rem;
+    color: var(--color-4);
+    margin-bottom: 1rem;
+}
+
+.bloque-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-1);
+    opacity: 0.9;
+}
+
+/* --- 4. SECCIÓN CONOCENOS (OVERLAY) --- */
+.conocenos {
+    position: relative;
+    width: 100%;
+    height: 31.25rem;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.conocenos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.conocenos-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 43, 76, 0.6); /* Azul oscuro con transparencia */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.call-to-action-overlay h3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.3);
+    max-width: 50rem;
+}
+
+.boton-contacto-overlay {
+    display: inline-block;
+    background: var(--color-2);
+    color: var(--color-4);
+    padding: 1.2rem 3.5rem;
+    border-radius: 6.25rem;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 0.625rem 1.5625rem rgba(0,0,0,0.2);
+}
+
+.boton-contacto-overlay:hover {
+    background: var(--color-5);
+    color: white;
+    transform: scale(1.05) translateY(-0.1875rem);
+    box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 48em) {
+    .cuadrícula-moderna {
+        grid-template-columns: 1fr;
+    }
+    
+    .call-to-action-overlay h3 {
+        font-size: 2rem;
+    }
+    
+    .conocenos {
+        height: 25rem;
+    }
+}
+
+/* --- 4. MEDIA QUERIES (PARA RESPONSIVE) --- */
+/* --- 5. RESPONSIVE --- */
+@media (max-width: 64em) {
+    .seccion-superior,
+    .contenido-adicional {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .rueda-container {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .texto-container h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .cuadrícula-moderna {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .conocenos {
+        height: 25rem;
+    }
+
+    .call-to-action-overlay h3 {
+        font-size: 2rem;
+    }
+
+    .bloque-info {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 30em) {
+    .conocenos {
+        height: 18.75rem;
+    }
+
+    .call-to-action-overlay h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .boton-contacto-overlay {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .texto-container h1 {
+        font-size: 2.5rem;
+    }
+}r;
+    }
+    
+    
+}
+    

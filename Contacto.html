@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos | Ziklounir</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600&family=Inspiration&display=swap"
+        rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/051bfd6557.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="header-placeholder"></div>
+
+    <section class="hero-contacto">
+        <div class="hero-content">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte a rodar mejor.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="info">
+            <h2>Contáctanos o Solicita una Asesoría Gratuita</h2>
+            <p class="texto-asesoria">Déjanos tus datos y un experto del Club Ziklounir se pondrá en contacto contigo para explicarte cómo podemos ayudarte a mejorar tu rendimiento y disfrutar de las mejores rutas de Colombia.</p>
+
+            <div class="contact-details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p>contacto@ziklounir.com</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Teléfono</strong>
+                        <p>+57 300 XXX XXXX</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Dirección</strong>
+                        <p>Campus UNIR, Bogotá, Colombia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <form action="#" method="POST" id="formContacto">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre"><i class="fa-solid fa-user"></i> Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 ..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nivel"><i class="fa-solid fa-bicycle"></i> Nivel de experiencia</label>
+                        <select id="nivel" name="nivel" required>
+                            <option value="">Selecciona...</option>
+                            <option value="principiante">Principiante (Cero experiencia)</option>
+                            <option value="intermedio">Intermedio (Rutas frecuentes)</option>
+                            <option value="avanzado">Avanzado / Competidor</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha"><i class="fa-solid fa-calendar-day"></i> Día sugerido</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hora"><i class="fa-solid fa-clock"></i> Hora preferida</label>
+                        <input type="time" id="hora" name="hora" min="09:00" max="18:00" required>
+                    </div>
+                </div>
+
+                <div class="form-single">
+                    <label for="interes"><i class="fa-solid fa-star"></i> ¿Qué te interesa más?</label>
+                    <select id="interes" name="interes" required>
+                        <option value="">Cuéntanos tu interés...</option>
+                        <option value="rutas">Explorar Rutas</option>
+                        <option value="cursos">Cursos de Formación</option>
+                        <option value="socio">Ser Socio del Club</option>
+                        <option value="otro">Otros asuntos</option>
+                    </select>
+                </div>
+
+                <div class="form-single">
+                    <label for="comentarios"><i class="fa-solid fa-message"></i> Mensaje</label>
+                    <textarea id="comentarios" name="comentarios" rows="5" placeholder="¿Tienes alguna duda específica?"></textarea>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="privacidad" name="privacidad" required onchange="document.getElementById('btnEnviar').disabled = !this.checked">
+                    <label for="privacidad">Acepto la <a href="legal.html#privacidad">política de privacidad</a>.</label>
+                </div>
+
+                <button id="btnEnviar" type="submit" class="btn-submit" disabled>Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+
+</html>

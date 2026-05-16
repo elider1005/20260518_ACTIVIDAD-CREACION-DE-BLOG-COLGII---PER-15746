@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciación al ciclismo</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/051bfd6557.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <link rel="stylesheet" href="assets/CSS/cursos.css">
+</head>
+
+<body>
+
+
+
+    <div id="header-placeholder"></div>
+
+  <section class="hero-cursos">
+    <div class="hero-content">
+      <h1>Cursos de Ciclismo</h1>
+      <p>Aprende, mejora y disfruta con los mejores profesionales.</p>
+    </div>
+  </section>
+
+  <main class="content-wrapper container">
+    <section class="texto">
+
+      <div class="descripcion">
+        <h2>Descripción</h2>
+        <p>
+          El curso de Iniciación al Ciclismo está pensado para todas aquellas personas que quieren
+          aprender desde cero o recuperar la confianza sobre la bici. A través de clases prácticas
+          y dinámicas, enseñamos las bases del ciclismo: equilibrio, manejo, seguridad y
+          mantenimiento básico, para que cada participante pueda disfrutar pedaleando con confianza.
+        </p>
+
+        <h2>Objetivos del curso</h2>
+        <ul class="icon-list">
+          <li><i class="fa-solid fa-check"></i> Aprender a montar y manejar la bicicleta de forma segura.</li>
+          <li><i class="fa-solid fa-check"></i> Conocer las partes principales de la bici y su correcto ajuste.</li>
+          <li><i class="fa-solid fa-check"></i> Mejorar la técnica de frenado, cambio de marchas y equilibrio.</li>
+          <li><i class="fa-solid fa-check"></i> Familiarizarse con las normas de seguridad vial y conducción en grupo.</li>
+          <li><i class="fa-solid fa-check"></i> Realizar un mantenimiento básico de la bicicleta.</li>
+        </ul>
+
+        <h2>Contenidos</h2>
+        <ul>
+          <li>Ajuste de la bicicleta y control de estabilidad.</li>
+          <li>Técnicas de pedaleo y frenado.</li>
+          <li>Uso de los cambios en diferentes terrenos.</li>
+          <li>Señales y normas básicas de circulación.</li>
+          <li>Mecánica básica: pinchazos, cadena, frenos.</li>
+          <li>Prácticas en circuito cerrado y rutas cortas guiadas.</li>
+        </ul>
+
+        <h2>Duración y formato</h2>
+        <ul>
+          <li>Duración: 6 sesiones de 1 hora y media.</li>
+          <li>Modalidad: Teórico-práctica (80 % práctica / 20 % teoría).</li>
+          <li>Lugar: Campus UNIR Colombia y rutas seguras cercanas.</li>
+          <li>Fechas: Consultar calendario de próximas convocatorias.</li>
+        </ul>
+        
+      </div>
+    </section>
+    
+    <aside class="galeria" aria-label="Galería de imágenes del curso">
+      <img src="assets/img/ninosbicleta.jpg" alt="Niños en bicicleta">
+      <img src="assets/img/familiabicicleta.jpg" alt="Familia en bicicleta">
+      <img src="assets/img/partesbicicleta.jpg" alt="Partes de bicicleta">
+      <img src="assets/img/adultosbicicleta.jpg" alt="Adultos en bicicleta">
+    </aside>
+
+  </main>
+  
+  <section class="pricing-card glass-card">
+    <h3>Inversión</h3>
+    <div class="price-box">
+            <span class="price-item"><strong>Socios:</strong> $80.000 COP</span>
+            <span class="price-item"><strong>No socios:</strong> $400.000 COP</span>
+    </div>
+    <p class="price-detail">(Incluye seguro y certificado de participación)</p>
+  </section>
+
+  <section class="inscripcion-box glass-card container">
+    <h2 class="titulo-inscripcion">Ficha de inscripción</h2>
+    <form action="#" method="post" class="form-grid">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="5" max="99" required>
+      </div>
+      <div class="form-group">
+        <label for="nivel">Nivel actual</label>
+        <select id="nivel" name="nivel">
+          <option value="iniciacion">Iniciación (No sé montar)</option>
+          <option value="basico">Básico (Sé montar pero me falta técnica)</option>
+          <option value="medio">Medio (Ruedo con confianza)</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label for="observ">Observaciones</label>
+        <textarea id="observ" name="observ" placeholder="Alguna observación médica o técnica..."></textarea>
+      </div>
+      <div class="full submit-row">
+        <button type="submit" class="gradient-btn">Enviar inscripción</button>
+      </div>
+    </form>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.informacion-legal {
+    padding: 2rem 0;
+}
+
+.legal-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.legal-hero h1 {
+    font-size: 3.5rem;
+    color: var(--color-4);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.legal-hero p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.legal-card {
+    background: white;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0.9375rem 2.5rem rgba(0,0,0,0.05);
+    border: 0.0625rem solid rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+}
+
+.legal-card:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 0.125rem solid #f0f4f8;
+    padding-bottom: 1.5rem;
+}
+
+.card-header i {
+    font-size: 2.5rem;
+    color: var(--color-5);
+}
+
+.card-header h2 {
+    font-size: 2rem;
+    color: var(--color-1);
+    margin: 0;
+}
+
+.card-body h3 {
+    font-size: 1.3rem;
+    color: var(--color-4);
+    margin: 2rem 0 1rem 0;
+}
+
+.card-body p {
+    line-height: 1.8;
+    color: var(--color-1);
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.card-body ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.card-body li {
+    margin-bottom: 0.8rem;
+    color: var(--color-1);
+    opacity: 0.9;
+}
+
+.cookie-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cookie-type {
+    background: #f8fbff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border-left: 0.25rem solid var(--color-5);
+}
+
+.cookie-type h4 {
+    margin-bottom: 0.5rem;
+    color: var(--color-5);
+}
+
+.privacy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.privacy-item {
+    text-align: center;
+}
+
+.privacy-item h3 {
+    margin-top: 0;
+    color: var(--color-5);
+}
+
+@media (max-width: 62em) {
+    .privacy-grid, .cookie-types {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 48em) {
+    .legal-card {
+        padding: 2rem;
+    }
+    .legal-hero h1 {
+        font-size: 2.5rem;
+    }
+}

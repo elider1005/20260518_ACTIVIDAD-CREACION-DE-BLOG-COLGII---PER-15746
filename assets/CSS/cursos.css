@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =======================================================
+   ESTILOS ESPECÍFICOS: PÁGINA DE CURSOS
+   ======================================================= */
+
+/* --- Configuración Local --- */
+.hero-cursos {
+  height: 40vh;
+  background: linear-gradient(rgba(16, 44, 87, 0.8), rgba(16, 44, 87, 0.8)), url('../img/bilbao_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* -------------------------------------------------------
+   CONTENIDO PRINCIPAL
+--------------------------------------------------------*/
+.content-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.texto {
+  flex: 1.5;
+  padding-right: 2rem;
+  text-align: left;
+}
+
+.descripcion {
+  text-align: left;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.descripcion h2 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion p {
+  text-align: left;
+  margin-left: 0;
+  line-height: 1.6;
+}
+
+h2 {
+  color: var(--color-4);
+  margin-top: 2.5rem; /* Aumentado */
+  margin-bottom: 1.5rem; /* Añadido */
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* -------------------------------------------------------
+   GALERÍA DE IMÁGENES
+--------------------------------------------------------*/
+.galeria {
+  flex: 1;
+  max-width: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.galeria img {
+  width: 100%;
+  height: 15.625rem; /* Aumentado */
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0,0,0,0.1);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.08) translateY(-0.625rem);
+  box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,0.15);
+}
+
+.icon-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.icon-list i {
+  color: var(--color-6);
+  font-size: 1.2rem;
+}
+
+.pricing-card {
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.625rem);
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.3);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.3);
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-4);
+}
+
+.price-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.price-item {
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.05);
+}
+
+.price-item strong {
+  color: var(--color-5);
+  display: block;
+  font-size: 1.5rem;
+}
+
+.price-detail {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Ajustes de responsive para la galería */
+@media (max-width: 48em) {
+  .galeria {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+/* -------------------------------------------------------
+   INSCRIPCIÓN
+--------------------------------------------------------*/
+.inscripcion-box {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.625rem);
+  margin: 4rem auto;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  max-width: 50rem;
+  box-shadow: 0 0.9375rem 2.1875rem rgba(0,0,0,0.1);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+}
+
+.titulo-inscripcion {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-grid .full {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.45rem;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 4rem;
+  resize: vertical;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 0.45rem;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+}
+.btn-map{
+  background: linear-gradient(135deg, var(--color-5) 0%, var(--color-6) 100%);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: var(--color-2);
+  border: none;
+  border-radius: 3.125rem;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0,180,216,0.3);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.btn-map:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,180,216,0.4);
+}
+
+
+/* -------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------*/
+@media (max-width: 56.25em) {
+  .content-wrapper {
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+
+  .texto {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .galeria img:nth-child(2) {
+    left: 0;
+  }
+  .galeria img:nth-child(4) {
+    left: 0;
+  }
+  .galeria {
+    width: 100%;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    overflow-x: auto;
+  }
+
+  .galeria img {
+    width: 20%;
+    height: auto;
+    flex: 0 0 auto;
+  }
+
+  .inscripcion-box {
+    max-width: 95%;
+    padding: 1.2rem;
+  }
+
+}
+
+@media (max-width: 37.5em) {
+
+
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .galeria {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 0.6rem;
+  }
+
+  .galeria img {
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inscripcion-box {
+    padding: 1rem;
+    margin: 1.2rem;
+  }
+
+}

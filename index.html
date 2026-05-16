@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
+        <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/051bfd6557.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/inicio.css">
+    <title>Club Ziklounir | UNIR Colombia</title>
+</head>
+
+<body>
+<!-- ------------------------------------------------------------
+AQUI ESTA NUESTRO BARRA DE NAVEGACIÓN = HEADER + NAV
+----------------------------------------------------------------->    
+<div id="header-placeholder"></div>
+
+    <main class="grid-container">
+        <section class="bienvenido">
+            <div class="carrusel-box">
+                <div class="carrusel-container">
+                    <ul id="carrusel-slides">
+                        <li class="slide active">
+                            <img src="assets/img/1.png" alt="Paisaje de Colombia">
+                            <div class="slide-caption">
+                                <h2>Explora los Andes</h2>
+                                <p>Rutas épicas por el corazón de las montañas colombianas.</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <img src="assets/img/2.png" alt="Bicicletas en los Andes">
+                            <div class="slide-caption">
+                                <h2>Pasión por el Pedal</h2>
+                                <p>Únete a nuestra comunidad y vive el ciclismo al máximo.</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <img src="assets/img/3.png" alt="Ciclistas subiendo a Letras">
+                            <div class="slide-caption">
+                                <h2>El Reto de Letras</h2>
+                                <p>Conquista uno de los puertos más largos del mundo.</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <img src="assets/img/4.png" alt="Ciclistas en la Sabana">
+                            <div class="slide-caption">
+                                <h2>Sabana Infinita</h2>
+                                <p>Disfruta de rodadas tranquilas con paisajes inigualables.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Controles del Carrusel -->
+                <button class="carrusel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carrusel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                
+                <!-- Indicadores -->
+                <div class="carrusel-dots" id="carrusel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+            </div>            
+            <article class="bloque-bienvenido">
+                <h1>Bienvenido a Ziklounir</h1>
+                <h4>Tu lugar para rutas, consejos y pasión por el ciclismo en Colombia.</h4>
+                <a href="rutas.html" class="btn-explora">Explora rutas</a>
+            </article>
+        </section>
+
+<!-- BLOQUE NOTICIAS -->
+        <section class="noticias">
+            <h2>Noticias</h2>
+            <article class="noticia"> 
+                <img class="img-noticia" src="assets/img/Equipo-cortizo.png" alt="">
+                <p class="redaccion"> <span class="sombrear">🏆 Talento UNIR en el Ciclismo Nacional</span> <br>Nuestros estudiantes destacan en las competencias regionales, demostrando que la disciplina deportiva y la excelencia académica van de la mano. <span class="info"><a href="#" target="_blank">+ info</a></span></p>
+            </article>
+
+            <article class="noticia"> 
+                <img  class="img-noticia" src="assets/img/Jonathan.png" alt="">
+                <p class="redaccion"><span class="sombrear">Egan Bernal inspira a la nueva generación Ziklounir</span> <br>El campeón del Tour de Francia envía un mensaje de motivación a nuestro club, destacando la importancia de las rutas seguras y la formación técnica en Colombia. <span class="fecha">(30/10/2025)</span>  <span class="info"><a href="#" target="_blank">+ info</a></span></p>
+            </article>
+
+            <article class="noticia"> 
+                <img  class="img-noticia" src="assets/img/3.png" alt="Gran Fondo UNIR">
+                <p class="redaccion"><span class="sombrear">🚲 Gran Fondo UNIR Colombia 2026: El Eje Cafetero nos espera</span> <br>El Club Universitario UNIR anuncia la primera edición del Gran Fondo en Colombia. Una ruta épica que conectará a nuestra comunidad universitaria a través de los paisajes más emblemáticos del Quindío... <span class="fecha">(15/11/2025)</span>  <span class="info"><a href="#">+ info</a></span></p>
+            </article>
+        </section>
+
+<!-- BLOQUE ASIDE "barra lateral" -->
+        <aside class="barra-lateral">
+            <div class="section-lateral">
+                <!-- Barra de Búsqueda Mejorada -->
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input class="buscar" type="text" name="buscar" placeholder="Buscar rutas o consejos...">
+                </div>
+
+                <!-- Entradas Recientes con Icono -->
+                <div class="entradas-rec">
+                    <h3><i class="fas fa-fire-alt"></i> Entradas recientes</h3>
+                    <ul class="lista-recientes">
+                        <li>
+                            <a href="#">
+                                <span class="post-title">Salida al Alto de Letras</span>
+                                <span class="post-date">9 de Noviembre 2025</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="post-title">Ruta Alto de Patios</span>
+                                <span class="post-date">16 de Noviembre 2025</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Archivos con Icono -->
+                <div class="archivos"> 
+                    <h3><i class="fas fa-archive"></i> Archivos</h3>
+                    <div class="select-wrapper">
+                        <select name="mes" class="elegir">
+                            <option value="">Elegir el mes</option>
+                            <option value="enero">Enero 2025</option>
+                            <option value="febrero">Febrero 2025</option>
+                            <option value="marzo">Marzo 2025</option>
+                            <option value="octubre">Octubre 2025</option>
+                            <option value="noviembre">Noviembre 2025</option>
+                        </select>
+                        <i class="fas fa-chevron-down select-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Categorías con Icono -->
+                <div class="categorias">
+                    <h3><i class="fas fa-th-list"></i> Categorías</h3>
+                    <div class="select-wrapper">
+                        <select id="categoria" name="categorias" class="elegir">
+                            <option value="">Elegir la categoría</option>
+                            <option value="carreras">Carreras</option>
+                            <option value="eventos">Eventos</option>
+                            <option value="rutas.html">Rutas</option>
+                            <option value="cursos.html">Cursos</option>
+                        </select>
+                        <i class="fas fa-chevron-down select-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+  const select = document.getElementById('categoria');
+  select.addEventListener('change', () => {
+    if (select.value) window.location.href = select.value;
+  });
+</script>
+</body>
+</html>

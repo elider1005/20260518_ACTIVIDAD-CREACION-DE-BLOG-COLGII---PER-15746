@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =======================================================
+   ESTILOS ESPECÍFICOS: PÁGINA DE CONTACTO Y ASESORÍA
+   ======================================================= */
+
+/* --- Hero Section de Contacto --- */
+.hero-contacto {
+  height: 40vh;
+  background: linear-gradient(rgba(16, 44, 87, 0.8), rgba(16, 44, 87, 0.8)), url('../img/bilbao_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 4rem 10%;
+  gap: 4rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--color-4) 0%, var(--color-5) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.texto-asesoria {
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  color: #444;
+  border-left: 0.25rem solid var(--color-5);
+  padding-left: 1.5rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.detail-item:hover {
+  transform: translateX(0.625rem);
+}
+
+.detail-item i {
+  font-size: 1.5rem;
+  color: var(--color-6);
+  width: 3rem;
+  height: 3rem;
+  background: rgba(80, 177, 237, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.detail-item strong {
+  display: block;
+  color: var(--color-4);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.detail-item p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------
+   FORMULARIO
+--------------------------------------------------------*/
+.formulario {
+  flex: 1.5;
+  padding: 3.5rem;
+  background: #ffffff;
+  border-radius: 2.5rem;
+  box-shadow: 0 1.5625rem 3.75rem rgba(26, 43, 76, 0.08);
+  border: 0.0625rem solid rgba(0,0,0,0.03);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.form-group, .form-single {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-weight: 700;
+  color: var(--color-1);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03125rem;
+}
+
+label i {
+    color: var(--color-5);
+    font-size: 1rem;
+}
+
+input, textarea, select {
+  background-color: #f9fbff;
+  border: 2px solid transparent;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  font-size: 1rem;
+  color: var(--color-1);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-5);
+  background-color: white;
+  box-shadow: 0 12px 25px rgba(11, 117, 202, 0.1);
+  transform: translateY(-2px);
+}
+
+textarea {
+    resize: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.checkbox-container a {
+    color: var(--color-5);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-submit {
+   width: 100%;
+   background: linear-gradient(135deg, var(--color-4) 0%, var(--color-5) 100%);
+   padding: 1.4rem;
+   font-size: 1.1rem;
+   font-weight: 800;
+   color: white;
+   border: none;
+   border-radius: 6.25rem;
+   box-shadow: 0 0.9375rem 1.875rem rgba(16, 44, 87, 0.2);
+   transition: all 0.4s ease;
+   cursor: pointer;
+   text-transform: uppercase;
+   letter-spacing: 0.0625rem;
+}
+
+.btn-submit:hover:not(:disabled) {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1.25rem 2.5rem rgba(16, 44, 87, 0.3);
+    filter: brightness(1.1);
+}
+
+.btn-submit:disabled {
+    background: #e0e0e0;
+    color: #a0a0a0;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* -------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------*/
+@media (max-width: 68.75em) {
+  main {
+    flex-direction: column;
+    padding: 3rem 5%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info, .formulario {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
