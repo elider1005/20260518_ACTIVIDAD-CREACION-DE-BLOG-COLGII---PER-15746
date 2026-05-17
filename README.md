@@ -98,7 +98,7 @@ Centro de transparencia: política de privacidad, política de cookies y aviso l
 ---
 ##  Autores
 Este proyecto ha sido desarrollado por:
-- [Santiago Patiño](https://www.linkedin.com/in/ingsantpatino/)
+- [Santiago Patiño Torres](https://www.linkedin.com/in/ingsantpatino/)
 - [Brandon Elder Patiño Torres]()
 
 ---
