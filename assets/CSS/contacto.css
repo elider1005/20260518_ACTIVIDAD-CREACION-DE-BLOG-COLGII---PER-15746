@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* =======================================================
    ESTILOS ESPECÍFICOS: PÁGINA DE CONTACTO Y ASESORÍA
@@ -33,7 +29,7 @@
   opacity: 0.9;
 }
 
-main {
+.contacto-page main {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -43,11 +39,13 @@ main {
   margin: 0 auto;
 }
 
+
 .info {
     flex: 1;
 }
 
 .info h2 {
+  text-align: center;
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
   background: linear-gradient(135deg, var(--color-4) 0%, var(--color-5) 100%);
@@ -67,35 +65,43 @@ main {
 
 .contact-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 1.5rem;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 .detail-item {
+  flex: 1;                    /* Hace que todos los cuadros tengan el mismo ancho */
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.5rem;
+  flex-direction: column;     /* Organiza el icono arriba y el texto abajo */
+  align-items: center;        /* Centra todo el contenido internamente */
+  text-align: center;
+  padding: 2rem 1.5rem;
   background: white;
-  border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 25px rgba(26, 43, 76, 0.06); /* Sombra más suave y moderna */
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .detail-item:hover {
-  transform: translateX(0.625rem);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 15px 35px rgba(26, 43, 76, 0.12);
 }
 
 .detail-item i {
-  font-size: 1.5rem;
-  color: var(--color-6);
-  width: 3rem;
-  height: 3rem;
-  background: rgba(80, 177, 237, 0.1);
+  font-size: 1.6rem;
+  color: var(--color-brand-primary);
+  width: 3.5rem;
+  height: 3.5rem;
+  background: rgba(11, 117, 202, 0.08); /* Fondo sutil con tu color de marca */
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  margin-bottom: 1.2rem;       /* Separa el icono del texto inferior */
 }
 
 .detail-item strong {
@@ -109,6 +115,8 @@ main {
 .detail-item p {
   margin: 0;
   font-weight: 600;
+  font-size: 1rem;
+  color: #333;
 }
 
 /* -------------------------------------------------------
@@ -122,6 +130,30 @@ main {
   box-shadow: 0 1.5625rem 3.75rem rgba(26, 43, 76, 0.08);
   border: 0.0625rem solid rgba(0,0,0,0.03);
 }
+
+#formContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.info-form h2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--color-4) 0%, var(--color-5) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
 
 form {
   display: flex;
